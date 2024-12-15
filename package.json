@@ -1,0 +1,43 @@
+{
+  "name": "@modelcontextprotocol/is-even-server",
+  "version": "1.0.0",
+  "description": "Enterprise-grade solution for determining if a number is even",
+  "type": "module",
+  "bin": {
+    "is-even-server": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "is-even",
+    "enterprise",
+    "numbers",
+    "meme"
+  ],
+  "author": "Cline",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Gonzalo/mcp-is-even.git"
+  },
+  "bugs": {
+    "url": "https://github.com/M-Gonzalo/mcp-is-even/issues"
+  },
+  "homepage": "https://github.com/M-Gonzalo/mcp-is-even#readme"
+}
